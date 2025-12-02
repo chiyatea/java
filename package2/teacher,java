@@ -1,0 +1,9 @@
+public class teacher {
+    public void testSamePackage(){
+        student s = new student();
+        // System.out.println("Accessing private a = " + s.a); // private, not accessible
+        System.out.println("defalt b = " + s.b); // default accessible within same package
+        System.out.println("protected c = " + s.c); // protected, accessible in s
+        System.out.println("public d = " + s.d); // public, accessible everywhere   
+
+    }
