@@ -1,0 +1,14 @@
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Running: " + Thread.currentThread().getName());
+    }
+}
+
+class TestThread {
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+
+        t.run(); // runs in main thread
+        t.start(); // runs in a new thread
+    }
+}
